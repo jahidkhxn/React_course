@@ -8,17 +8,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px 8%;
+    background-color: white;
+    box-shadow: 0 2px 10px #00000015;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav1 h1{
+    color: #5fcf80;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .nav2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
-.nav2 ul a {
+.nav2 ul {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    gap: 30px;
+    gap: 40px;
+    list-style: none;
+}
 
+.nav2 ul a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.nav2 ul a:hover {
+    color: #5fcf80;
+}
+
+.custom-btn {
+    background-color: #5fcf80;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
 }

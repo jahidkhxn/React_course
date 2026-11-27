@@ -1,4 +1,6 @@
+
 import Header from "./Header"
+import Section from "./Section"
 
 
 
@@ -6,6 +8,7 @@ function Home() {
   return (
     <>
      <Header />
+     <Section />
     </>
   )
 }

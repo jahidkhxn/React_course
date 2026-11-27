@@ -1,12 +1,27 @@
+import Button from './Button'
 import './Header.css'
+import { useState } from 'react'
 
 function Header(){
+
+    const [menuOpen, setMenuOpen] = useState(false)
+
     return(
         <>
         <div className="header">
-            <div className="nav">
+            <div className="nav1">
                 <h1>QUIZGAME</h1>
             </div>
+
+            <button 
+                className='menu-icon'
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label='Toggle navigation'
+                aria-expanded={menuOpen}
+            >    
+                {menuOpen ? '✕' : ''}
+            </button>
+
             <div className="nav2">
                 <ul>
                     <a href="#">Home</a>
@@ -17,7 +32,9 @@ function Header(){
                     <a href="#">Dropdown</a>
                     <a href="#">Contact</a>
                 </ul>
-                <button>Get Started</button>
+
+                <Button text="Get Started"/>
+
             </div>
         </div>
         </>

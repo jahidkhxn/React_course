@@ -1,11 +1,11 @@
-import './Button.css'
 
 
-function Button({bgcolor,setX,x,text,status}){
+
+function Button({text}){
 
     return(
         <>
-        <button style={{backgroundColor:bgcolor}}  onClick={()=> status?setX(x++):setX(x--)}>{text}{x}</button>
+        <button className='custom-btn'>{text}</button>
         </>
     )
 }
