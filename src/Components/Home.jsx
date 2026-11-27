@@ -1,10 +1,11 @@
-import './Home.css'
+import Header from "./Header"
+
 
 
 function Home() {
   return (
     <>
-     <h1>hiii</h1>
+     <Header />
     </>
   )
 }
