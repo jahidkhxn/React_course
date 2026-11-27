@@ -3,7 +3,7 @@ import './Section.css'
 function Section(){
     return(
         <>
-        <img src="hero.jpg" alt="" />
+        {/* <img src="hero.jpg" alt="" /> */}
         </>
     )
 }

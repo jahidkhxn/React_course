@@ -19,10 +19,10 @@ function Header(){
                 aria-label='Toggle navigation'
                 aria-expanded={menuOpen}
             >    
-                {menuOpen ? '✕' : ''}
+                {menuOpen ? '✕' : '☰'}
             </button>
 
-            <div className="nav2">
+            <div className={`nav2 ${menuOpen ? 'active' : ''}`}>
                 <ul>
                     <a href="#">Home</a>
                     <a href="#">About</a>

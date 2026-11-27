@@ -20,6 +20,7 @@
 .nav1 h1{
     color: #5fcf80;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 .nav2 {
     display: flex;
@@ -53,4 +54,55 @@
     padding: 12px 25px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+/* menu button */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 15px 5%;
+
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav2 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+        box-shadow: 0 5px 10px #00000015;
+    }
+
+    .nav2.active {
+        display: flex;
+    }
+
+    .nav2 ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav1 h1 {
+        font-size: 26px;
+    }
 }
